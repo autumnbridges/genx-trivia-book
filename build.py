@@ -46,8 +46,8 @@ page = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sources and References</title>
-<meta name="description" content="Every source cited in the book, by decade and chapter.">
+<title>Totally Gen X! Sources</title>
+<meta name="description" content="Sources and references for Totally Gen X!, the pop culture trivia book by Autumn Bridges.">
 <style>
   :root {{
     --bg: #0f1020; --panel: #171a33; --ink: #f4f1ff; --muted: #b7b3d6;
@@ -61,6 +61,9 @@ page = f'''<!doctype html>
   header {{ text-align: center; padding: 16px 0 8px; }}
   .kicker {{ color: var(--neon2); letter-spacing: .25em; font-size: 12px; text-transform: uppercase; margin: 0 0 10px; }}
   h1 {{ font-size: clamp(30px, 8vw, 44px); line-height: 1.1; margin: 0 0 10px; text-shadow: 0 0 18px rgba(255,95,162,.35); }}
+  .sub {{ color: var(--neon2); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 15px; margin: 0 0 6px; }}
+  .byline {{ color: var(--muted); margin: 0 0 22px; font-size: 15px; }}
+  .section-title {{ font-size: 20px; color: var(--ink); margin: 0 0 6px; letter-spacing: .04em; }}
   .lede {{ color: var(--muted); margin: 0 auto 18px; max-width: 520px; }}
   nav {{ display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 0 0 24px; position: sticky; top: 0;
     background: rgba(15,16,32,.92); padding: 10px 0; backdrop-filter: blur(6px); z-index: 2; }}
@@ -89,8 +92,11 @@ page = f'''<!doctype html>
 <body>
 <main>
   <header>
-    <p class="kicker">From the book</p>
-    <h1>Sources and References</h1>
+    <p class="kicker">Pop Culture Trivia Book</p>
+    <h1>Totally Gen&nbsp;X!</h1>
+    <p class="sub">70s, 80s &amp; 90s Throwback</p>
+    <p class="byline">Autumn Bridges</p>
+    <h2 class="section-title">Sources and References</h2>
     <p class="lede">Every source cited in the book, by decade and chapter. Tap a chapter to open its list.</p>
   </header>
   <nav>{nav}</nav>
@@ -99,7 +105,7 @@ page = f'''<!doctype html>
     <p>Trivia Night runs every Tuesday at 8pm ET at The Mall.</p>
     <a class="btn" href="https://genxtown.com">Visit The Mall at genxtown.com</a>
   </div>
-  <footer><p>&copy; 2026. All rights reserved.</p></footer>
+  <footer><p>&copy; 2026 Autumn Bridges. All rights reserved.</p></footer>
 </main>
 </body>
 </html>
